@@ -7,6 +7,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>cbps-model</module>
+		<module>cbps-persistence-orm</module>
+		<module>cbps-ear</module>
 	</modules>
 
 	<build>
@@ -21,5 +23,24 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.wildfly.bom</groupId>
+				<artifactId>wildfly-javaee7-with-tools</artifactId>
+				<version>10.1.0.Final</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.wildfly</groupId>
+				<artifactId>wildfly-parent</artifactId>
+				<version>10.1.0.Final</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
