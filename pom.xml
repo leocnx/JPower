@@ -9,6 +9,7 @@
 		<module>cbps-model</module>
 		<module>cbps-persistence-orm</module>
 		<module>cbps-ear</module>
+		<module>cbps-persistence-api</module>
 	</modules>
 
 	<build>
