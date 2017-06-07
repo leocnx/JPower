@@ -24,7 +24,7 @@
 		</plugins>
 	</build>
 
-	<dependencyManagement>
+	<!-- <dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.wildfly.bom</groupId>
@@ -41,6 +41,6 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement> -->
 
 </project>
