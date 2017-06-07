@@ -16,6 +16,16 @@ public interface InvoiceAdapter extends Invoice, Adapter<BaseInvoice> {
 	default void setTradeNo(String tradeNo) {
 		unwrap().setTradeNo(tradeNo);
 	}
+	
+	@Override
+	default String getOutTradeNo() {
+		return unwrap().getOutTradeNo();
+	}
+
+	@Override
+	default void setOutTradeNo(String outTradeNo) {
+		unwrap().setOutTradeNo(outTradeNo);
+	}
 
 	@Override
 	default void propertyChange(PropertyChangeEvent evt) {

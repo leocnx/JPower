@@ -23,5 +23,10 @@ public class PersistentInvoice extends PersistentBaseAdapter<BaseInvoice> implem
 	public String getTradeNo() {
 		return InvoiceAdapter.super.getTradeNo();
 	}
+	
+	@Override
+	public String getOutTradeNo() {
+		return InvoiceAdapter.super.getOutTradeNo();
+	}
 
 }

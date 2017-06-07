@@ -8,6 +8,7 @@ public class BaseInvoice extends BaseCbpsObject implements Invoice {
 	}
 
 	private String tradeNo;
+	private String outTradeNo;
 
 	@Override
 	public String getTradeNo() {
@@ -17,6 +18,16 @@ public class BaseInvoice extends BaseCbpsObject implements Invoice {
 	@Override
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	@Override
+	public String getOutTradeNo() {
+		return outTradeNo;
+	}
+
+	@Override
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 }
