@@ -1,12 +1,12 @@
 package top.auok.cbps.model.base;
 
-import top.auok.cbps.model.Invoice;
+import top.auok.cbps.model.Mock;
 
-public class BaseInvoice extends BaseCbpsObject implements Invoice {
+public class BaseMock extends BaseCbpsObject implements Mock {
 
-	public BaseInvoice() {
+	public BaseMock() {
 	}
-
+	
 	private String tradeNo;
 	private String outTradeNo;
 

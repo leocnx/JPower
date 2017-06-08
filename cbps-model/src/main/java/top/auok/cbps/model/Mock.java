@@ -1,7 +1,10 @@
 package top.auok.cbps.model;
 
-public interface Invoice extends CbpsObject {
-
+/**
+ * Mock business object
+ */
+public interface Mock {
+	
 	String getTradeNo();
 
 	void setTradeNo(String tradeNo);
@@ -9,5 +12,4 @@ public interface Invoice extends CbpsObject {
 	String getOutTradeNo();
 
 	void setOutTradeNo(String outTradeNo);
-
 }

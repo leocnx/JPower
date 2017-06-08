@@ -1,9 +1,9 @@
 package top.auok.cbps.model.factory;
 
-import top.auok.cbps.model.Invoice;
+import top.auok.cbps.model.Mock;
 
 public interface CbpsObjectFactory {
 
-	Invoice createInvoice();
+	Mock createMock();
 
 }

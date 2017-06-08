@@ -1,14 +1,14 @@
 package top.auok.cbps.persistence.orm.model.factory;
 
-import top.auok.cbps.model.base.BaseInvoice;
+import top.auok.cbps.model.base.BaseMock;
 import top.auok.cbps.model.factory.CbpsObjectAdapterFactory;
-import top.auok.cbps.persistence.orm.model.PersistentInvoice;
+import top.auok.cbps.persistence.orm.model.PersistentMock;
 
 public class PersistentAdapterFactory implements CbpsObjectAdapterFactory {
 
 	@Override
-	public PersistentInvoice createInvoice() {
-		return new PersistentInvoice(new BaseInvoice());
+	public PersistentMock createMock() {
+		return new PersistentMock(new BaseMock());
 	}
 
 }
