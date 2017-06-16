@@ -45,6 +45,29 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.2.10.Final</version>
+			<!-- <exclusions>
+				<exclusion>
+					<groupId>dom4j</groupId>
+					<artifactId>dom4j</artifactId>
+				</exclusion>
+			</exclusions> -->
+		</dependency>
+		<!-- <dependency> <groupId>org.dom4j</groupId> <artifactId>dom4j</artifactId> 
+			<version>2.0.0</version> </dependency> -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-persistence-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.javaee</groupId>
+			<artifactId>jboss-ejb-api-3.0_spec</artifactId>
+			<version>5.0.2.GA</version>
 		</dependency>
 	</dependencies>
 
