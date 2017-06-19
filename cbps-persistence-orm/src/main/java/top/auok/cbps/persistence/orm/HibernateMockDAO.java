@@ -13,4 +13,5 @@ public class HibernateMockDAO extends BaseDAO<Mock, PersistentMock, Long> implem
 	public HibernateMockDAO() {
 		super(PersistentMock.class);
 	}
+
 }

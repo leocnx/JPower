@@ -6,7 +6,7 @@ import top.auok.cbps.model.Mock;
 import top.auok.cbps.model.base.BaseMock;
 
 public interface MockAdapter extends Mock, Adapter<BaseMock> {
-	
+
 	@Override
 	default String getTradeNo() {
 		return unwrap().getTradeNo();
@@ -16,7 +16,7 @@ public interface MockAdapter extends Mock, Adapter<BaseMock> {
 	default void setTradeNo(String tradeNo) {
 		unwrap().setTradeNo(tradeNo);
 	}
-	
+
 	@Override
 	default String getOutTradeNo() {
 		return unwrap().getOutTradeNo();
@@ -33,4 +33,5 @@ public interface MockAdapter extends Mock, Adapter<BaseMock> {
 		// TODO
 		}
 	}
+
 }

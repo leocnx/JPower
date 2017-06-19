@@ -218,4 +218,5 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 		T toRemove = findById(key);
 		em.remove(toRemove);
 	}
+
 }

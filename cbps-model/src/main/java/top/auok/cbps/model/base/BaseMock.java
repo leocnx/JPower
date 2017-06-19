@@ -6,7 +6,7 @@ public class BaseMock extends BaseCbpsObject implements Mock {
 
 	public BaseMock() {
 	}
-	
+
 	private String tradeNo;
 	private String outTradeNo;
 

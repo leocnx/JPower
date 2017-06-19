@@ -18,12 +18,12 @@ public class PersistentMock extends PersistentBaseAdapter<BaseMock> implements M
 	PersistentMock() {
 		super(new BaseMock());
 	}
-	
+
 	@Override
 	public String getTradeNo() {
 		return MockAdapter.super.getTradeNo();
 	}
-	
+
 	@Override
 	public String getOutTradeNo() {
 		return MockAdapter.super.getOutTradeNo();

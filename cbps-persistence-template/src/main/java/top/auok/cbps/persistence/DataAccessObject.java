@@ -22,5 +22,5 @@ public interface DataAccessObject<T, K> {
 	T update(T entity);
 
 	void delete(K key);
-	
+
 }
