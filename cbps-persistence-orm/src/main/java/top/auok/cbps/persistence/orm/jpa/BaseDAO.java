@@ -41,13 +41,13 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 		em.persist(entity);
 	}
 
-	protected void enableFetchProfiles(String[] fetchProfiles) {
-		if (fetchProfiles.length > 0) {
-			Session session = em.unwrap(Session.class);
-			for (String fetchProfile : fetchProfiles) {
-				session.enableFetchProfile(fetchProfile);
-			}
-		}
+	public void delete(K key) {
+		T toRemove = findById(key);
+		em.remove(toRemove);
+	}
+
+	public T update(T entity) {
+		return em.merge(entity);
 	}
 
 	public T findById(K key, String... fetchProfiles) {
@@ -72,6 +72,15 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 		final CriteriaQuery<ET> query = em.getCriteriaBuilder().createQuery(entityClass);
 		receivingList.addAll(em.createQuery(query.select(query.from(entityClass))).getResultList());
 		return receivingList;
+	}
+
+	protected void enableFetchProfiles(String[] fetchProfiles) {
+		if (fetchProfiles.length > 0) {
+			Session session = em.unwrap(Session.class);
+			for (String fetchProfile : fetchProfiles) {
+				session.enableFetchProfile(fetchProfile);
+			}
+		}
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -208,15 +217,6 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 		} else {
 			return list.get(0);
 		}
-	}
-
-	public T update(T entity) {
-		return em.merge(entity);
-	}
-
-	public void delete(K key) {
-		T toRemove = findById(key);
-		em.remove(toRemove);
 	}
 
 }

@@ -45,11 +45,13 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<!-- <version>5.2.10.Final</version> -->
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>top.auok</groupId>
@@ -60,6 +62,7 @@
 			<groupId>org.jboss.javaee</groupId>
 			<artifactId>jboss-ejb-api-3.0_spec</artifactId>
 			<version>5.0.2.GA</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>
