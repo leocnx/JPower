@@ -3,7 +3,7 @@ package top.auok.cbps.model;
 /**
  * Mock business object
  */
-public interface Mock {
+public interface Mock extends CbpsObject {
 
 	String getTradeNo();
 

@@ -16,8 +16,8 @@ public class MockServiceImpl implements MockService {
 	@Override
 	@Transactional(rollbackOn = Exception.class)
 	public Mock createMock(Mock mock) {
-		// TODO Auto-generated method stub
-		return null;
+		mockDAO.create(mock);
+		return mockDAO.findById(mock.getId());
 	}
 
 }
