@@ -33,6 +33,11 @@
 							<groupId>top.auok</groupId>
 							<artifactId>cbps-persistence-api</artifactId>
 						</jarModule>
+						<jarModule>
+							<groupId>top.auok</groupId>
+							<artifactId>cbps-service</artifactId>
+							<includeInApplicationXml>true</includeInApplicationXml>
+						</jarModule>
 					</modules>
 				</configuration>
 			</plugin>
@@ -61,6 +66,11 @@
 		<dependency>
 			<groupId>top.auok</groupId>
 			<artifactId>cbps-persistence-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

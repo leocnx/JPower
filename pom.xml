@@ -11,6 +11,7 @@
 		<module>cbps-ear</module>
 		<module>cbps-persistence-template</module>
 		<module>cbps-persistence-api</module>
+		<module>cbps-service</module>
 	</modules>
 
 	<build>
