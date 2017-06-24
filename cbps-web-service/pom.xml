@@ -12,4 +12,33 @@
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jboss.spec.javax.ws.rs</groupId>
+			<artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.spec.javax.ws.rs</groupId>
+			<artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
