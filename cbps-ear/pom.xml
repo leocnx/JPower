@@ -38,6 +38,10 @@
 							<artifactId>cbps-service</artifactId>
 							<includeInApplicationXml>true</includeInApplicationXml>
 						</jarModule>
+						<webModule>
+							<groupId>top.auok</groupId>
+							<artifactId>cbps-web-service</artifactId>
+						</webModule>
 					</modules>
 				</configuration>
 			</plugin>
@@ -72,6 +76,12 @@
 			<groupId>top.auok</groupId>
 			<artifactId>cbps-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-web-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 </project>
