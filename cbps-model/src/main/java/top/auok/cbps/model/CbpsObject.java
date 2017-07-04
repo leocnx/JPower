@@ -19,5 +19,4 @@ public interface CbpsObject {
 	Date getUpdateDate();
 
 	void setUpdateDate(Date updateDate);
-
 }

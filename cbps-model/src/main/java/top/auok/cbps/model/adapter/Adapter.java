@@ -7,5 +7,4 @@ public interface Adapter<T> extends PropertyChangeListener {
 	void adapt(T adapted);
 
 	T unwrap();
-
 }

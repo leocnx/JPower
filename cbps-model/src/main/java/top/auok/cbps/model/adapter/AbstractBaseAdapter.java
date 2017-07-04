@@ -42,5 +42,4 @@ public abstract class AbstractBaseAdapter<T extends BaseCbpsObject> implements C
 		}
 		return delegate.hashCode();
 	}
-
 }

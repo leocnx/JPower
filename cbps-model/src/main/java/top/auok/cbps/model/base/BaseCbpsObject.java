@@ -100,5 +100,4 @@ public abstract class BaseCbpsObject implements CbpsObject {
 			return false;
 		return true;
 	}
-
 }

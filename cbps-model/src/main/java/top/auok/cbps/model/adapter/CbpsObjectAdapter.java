@@ -46,5 +46,4 @@ public interface CbpsObjectAdapter<T extends BaseCbpsObject> extends CbpsObject,
 	default void setUpdateDate(Date updateDate) {
 		unwrap().setUpdateDate(updateDate);
 	}
-
 }
