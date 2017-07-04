@@ -13,6 +13,7 @@
 		<module>cbps-persistence-api</module>
 		<module>cbps-service</module>
 		<module>cbps-web-service</module>
+		<module>cbps-web-model</module>
 	</modules>
 
 	<properties>
