@@ -28,5 +28,4 @@ public class PersistentMock extends PersistentBaseAdapter<BaseMock> implements M
 	public String getOutTradeNo() {
 		return MockAdapter.super.getOutTradeNo();
 	}
-
 }

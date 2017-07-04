@@ -218,5 +218,4 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 			return list.get(0);
 		}
 	}
-
 }

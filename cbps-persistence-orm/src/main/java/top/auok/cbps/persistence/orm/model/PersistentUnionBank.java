@@ -178,5 +178,4 @@ public class PersistentUnionBank extends PersistentBaseAdapter<BaseUnionBank> im
 	public String getLAST_UPD_TS() {
 		return UnionBankAdapter.super.getLAST_UPD_TS();
 	}
-
 }

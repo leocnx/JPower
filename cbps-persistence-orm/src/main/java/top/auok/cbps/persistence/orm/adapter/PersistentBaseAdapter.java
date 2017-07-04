@@ -63,5 +63,4 @@ public abstract class PersistentBaseAdapter<T extends BaseCbpsObject> extends Ab
 	public void setUpdateDate(Date updateDate) {
 		super.setUpdateDate(updateDate);
 	}
-
 }

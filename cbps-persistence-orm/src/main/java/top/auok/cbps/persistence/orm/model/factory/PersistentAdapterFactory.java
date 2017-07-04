@@ -20,5 +20,4 @@ public class PersistentAdapterFactory implements CbpsObjectAdapterFactory {
 	public PersistentUnionBank creatUnionBank() {
 		return new PersistentUnionBank(new BaseUnionBank());
 	}
-
 }
