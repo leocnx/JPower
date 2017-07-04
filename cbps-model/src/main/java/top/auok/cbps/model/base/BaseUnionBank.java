@@ -392,5 +392,4 @@ public class BaseUnionBank extends BaseCbpsObject implements UnionBank {
 	public void setLAST_UPD_TS(String LAST_UPD_TS) {
 		this.LAST_UPD_TS = LAST_UPD_TS;
 	}
-
 }

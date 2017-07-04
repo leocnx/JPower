@@ -33,5 +33,4 @@ public interface MockAdapter extends Mock, Adapter<BaseMock> {
 		// TODO
 		}
 	}
-
 }

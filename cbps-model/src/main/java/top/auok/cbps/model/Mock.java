@@ -12,5 +12,4 @@ public interface Mock extends CbpsObject {
 	String getOutTradeNo();
 
 	void setOutTradeNo(String outTradeNo);
-
 }

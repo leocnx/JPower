@@ -97,5 +97,4 @@ public interface UnionBank extends CbpsObject {
 	
 	String getLAST_UPD_TS();
 	void setLAST_UPD_TS(String LAST_UPD_TS);
-	
 }

@@ -8,5 +8,4 @@ public interface CbpsObjectFactory {
 	Mock createMock();
 
 	UnionBank creatUnionBank();
-
 }

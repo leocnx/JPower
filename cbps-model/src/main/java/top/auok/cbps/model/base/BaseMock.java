@@ -29,5 +29,4 @@ public class BaseMock extends BaseCbpsObject implements Mock {
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
-
 }

@@ -10,5 +10,4 @@ public interface CbpsObjectAdapterFactory extends CbpsObjectFactory {
 
 	@Override
 	UnionBankAdapter creatUnionBank();
-
 }

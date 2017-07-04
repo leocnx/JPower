@@ -331,5 +331,4 @@ public interface UnionBankAdapter extends UnionBank, Adapter<BaseUnionBank> {
 	default void propertyChange(PropertyChangeEvent evt) {
 		// TODO
 	}
-
 }
