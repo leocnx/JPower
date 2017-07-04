@@ -67,5 +67,4 @@ public class IdGenerator {
 	public static long getCommonId() {
 		return commonIdGenerator.nextId();
 	}
-
 }

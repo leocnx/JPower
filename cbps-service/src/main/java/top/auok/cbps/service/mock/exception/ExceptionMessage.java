@@ -20,5 +20,4 @@ public class ExceptionMessage extends ListResourceBundle {
 			{KEY.MOCK_EXP_02.toString(), "Mock2Exception:param:{0}"},
 			{KEY.MOCK_EXP_03.toString(), "Mock3Exception:param1:{0}:param2:{1}"}
 	};
-
 }

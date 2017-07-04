@@ -46,5 +46,4 @@ public class InvalidMockException extends RuntimeException {
 			super(ExceptionMessage.KEY.MOCK_EXP_03, param1, param2);
 		}
 	}
-
 }

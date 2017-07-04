@@ -22,5 +22,4 @@ public interface MockManagerWebResource {
 	@GET
 	@Path("{id}")
 	Mock getMock(@PathParam("id") Long id);
-
 }

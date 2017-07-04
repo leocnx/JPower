@@ -23,5 +23,4 @@ public class MockServiceImpl implements MockService {
 		mockDAO.create(mock);
 		return mockDAO.findById(mock.getId());
 	}
-
 }

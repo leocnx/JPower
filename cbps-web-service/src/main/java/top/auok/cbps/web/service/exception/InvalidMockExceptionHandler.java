@@ -13,5 +13,4 @@ public class InvalidMockExceptionHandler implements ExceptionMapper<InvalidMockE
 	public Response toResponse(InvalidMockException exception) {
 		return Response.serverError().entity(exception.getMessage()).build();
 	}
-
 }

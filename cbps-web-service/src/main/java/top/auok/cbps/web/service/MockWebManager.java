@@ -29,5 +29,4 @@ public class MockWebManager implements MockManagerWebResource {
 			throw new InvalidMockException.Mock2Exception(id.toString());
 		return mock;
 	}
-
 }

@@ -22,5 +22,4 @@ public interface DataAccessObject<T, K> {
 	<C extends Collection<? super T>> C findByIds(Set<K> keys, C receivingList);
 
 	<C extends Collection<? super T>> C findAll(C receivingList);
-
 }

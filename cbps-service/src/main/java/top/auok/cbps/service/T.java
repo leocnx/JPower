@@ -8,5 +8,4 @@ public class T {
 		System.out.println(IdGenerator.getFlowId());
 		System.out.println(IdGenerator.getCommonId());
 	}
-
 }
