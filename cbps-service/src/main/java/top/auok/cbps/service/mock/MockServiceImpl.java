@@ -6,6 +6,7 @@ import javax.transaction.Transactional;
 
 import top.auok.cbps.model.Mock;
 import top.auok.cbps.model.factory.CbpsObjectAdapterCopyFactory;
+import top.auok.cbps.model.factory.CbpsObjectAdapterFactory;
 import top.auok.cbps.persistence.annotation.Persistent;
 import top.auok.cbps.persistence.api.MockDAO;
 import top.auok.cbps.service.mock.exception.InvalidMockException;
@@ -16,6 +17,12 @@ public class MockServiceImpl implements MockService {
 
 	@Inject
 	@Persistent
+	// Get a persistent model
+	private CbpsObjectAdapterFactory persistentAdapterfactory;
+
+	@Inject
+	@Persistent
+	// Get a persistent model which convert from JSON model
 	private CbpsObjectAdapterCopyFactory persistentAdapterCopyFactory;
 
 	@Inject
@@ -30,9 +37,9 @@ public class MockServiceImpl implements MockService {
 	public Mock createMock(Mock mock) throws InvalidMockException {
 		if (mock == null)
 			throw new Mock1Exception();
-
-		mockDAO.create(getPersistentAdapter(mock));
-		return mockDAO.findById(mock.getId());
+		Mock entity = getPersistentAdapter(mock);
+		mockDAO.create(entity);
+		return entity;
 	}
 
 	@Override
