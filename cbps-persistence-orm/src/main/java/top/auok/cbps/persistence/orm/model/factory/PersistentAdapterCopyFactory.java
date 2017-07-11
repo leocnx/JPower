@@ -8,9 +8,11 @@ import javax.enterprise.context.Dependent;
 import top.auok.cbps.model.adapter.Adapter;
 import top.auok.cbps.model.base.BaseMock;
 import top.auok.cbps.model.factory.BaseCbpsObjectAdapterCopyFactory;
+import top.auok.cbps.persistence.annotation.Persistent;
 import top.auok.cbps.persistence.orm.model.PersistentMock;
 
 @Dependent
+@Persistent
 public class PersistentAdapterCopyFactory extends BaseCbpsObjectAdapterCopyFactory {
 
 	@SuppressWarnings("rawtypes")
