@@ -7,12 +7,14 @@ import top.auok.cbps.model.Mock;
 import top.auok.cbps.persistence.api.MockDAO;
 import top.auok.cbps.service.mock.MockService;
 import top.auok.cbps.service.mock.exception.InvalidMockException;
+import top.auok.cbps.web.converter.annotation.JSONized;
 import top.auok.cbps.web.model.JSONMock;
 
 @RequestScoped
 public class MockWebManager implements MockManagerWebResource {
 
 	@Inject
+	@JSONized
 	private MockService mockService;
 
 	@Inject
