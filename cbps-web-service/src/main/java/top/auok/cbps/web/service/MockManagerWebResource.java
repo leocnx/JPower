@@ -8,8 +8,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import top.auok.cbps.model.Mock;
 import top.auok.cbps.service.mock.exception.InvalidMockException;
+import top.auok.cbps.web.model.JSONMock;
 
 @Path("mock")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -17,9 +17,9 @@ import top.auok.cbps.service.mock.exception.InvalidMockException;
 public interface MockManagerWebResource {
 
 	@POST
-	Mock createMock(Mock mock) throws InvalidMockException;
+	JSONMock createMock(JSONMock mock) throws InvalidMockException;
 
 	@GET
 	@Path("{id}")
-	Mock getMock(@PathParam("id") Long id);
+	JSONMock getMock(@PathParam("id") Long id);
 }

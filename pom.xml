@@ -14,6 +14,7 @@
 		<module>cbps-service</module>
 		<module>cbps-web-service</module>
 		<module>cbps-web-model</module>
+		<module>cbps-web-converter</module>
 	</modules>
 
 	<properties>
