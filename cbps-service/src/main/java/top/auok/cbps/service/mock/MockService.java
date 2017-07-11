@@ -6,4 +6,6 @@ import top.auok.cbps.service.mock.exception.InvalidMockException;
 public interface MockService {
 
 	Mock createMock(Mock mock) throws InvalidMockException;
+
+	Mock findById(Long id);
 }

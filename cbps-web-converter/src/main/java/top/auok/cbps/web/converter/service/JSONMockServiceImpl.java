@@ -23,4 +23,9 @@ public class JSONMockServiceImpl implements MockService {
 	public Mock createMock(Mock mock) throws InvalidMockException {
 		return jsonAdapterCopyFactory.readapt(delegate.createMock(mock));
 	}
+
+	@Override
+	public Mock findById(Long id) {
+		return jsonAdapterCopyFactory.readapt(delegate.findById(id));
+	}
 }

@@ -34,4 +34,9 @@ public class MockServiceImpl implements MockService {
 		mockDAO.create(getPersistentAdapter(mock));
 		return mockDAO.findById(mock.getId());
 	}
+
+	@Override
+	public Mock findById(Long id) {
+		return mockDAO.findById(id);
+	}
 }
