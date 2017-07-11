@@ -10,7 +10,7 @@ import top.auok.cbps.web.model.adapter.JSONBaseAdapter;
 @JsonInclude(Include.NON_EMPTY)
 public class JSONMock extends JSONBaseAdapter<BaseMock> implements MockAdapter {
 
-	JSONMock(BaseMock delegate) {
+	public JSONMock(BaseMock delegate) {
 		super(delegate);
 	}
 
