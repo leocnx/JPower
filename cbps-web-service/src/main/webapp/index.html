@@ -7,7 +7,7 @@
 <script type="text/javascript">  
     $(document).ready(function(){  
         
-    	//var sendData = {"outTradeNo":"789", "tradeNo":"456"};
+    	//var map = {"outTradeNo":"789", "tradeNo":"456"};
     	
         var outTradeNo = 'outTradeNo';
         var tradeNo = 'tradeNo';
@@ -15,16 +15,16 @@
         map[outTradeNo] = "123456";
         map[tradeNo] = "654321";
           
-        var sendData = map;
-        alert(sendData);
+        var postData = JSON.stringify(map);
+        console.log("postData:" + postData);
         $.ajax({ 
             type:"POST", 
             url:"cbps/mock", 
             dataType:"json",      
             contentType:"application/json",               
-            data:JSON.stringify(sendData), 
-            success:function(data){ 
-                alert(JSON.stringify(data));                          
+            data:postData, 
+            success:function(returnData){ 
+                console.log("returnData:" + JSON.stringify(returnData));
             } 
          }); 
     });  
