@@ -53,11 +53,5 @@
 			<artifactId>cbps-persistence-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>org.jboss.javaee</groupId>
-			<artifactId>jboss-ejb-api-3.0_spec</artifactId>
-			<version>5.0.2.GA</version>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 </project>
