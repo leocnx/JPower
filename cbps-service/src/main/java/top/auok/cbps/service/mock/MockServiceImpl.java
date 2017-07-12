@@ -1,5 +1,7 @@
 package top.auok.cbps.service.mock;
 
+import java.util.List;
+
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -45,5 +47,10 @@ public class MockServiceImpl implements MockService {
 	@Override
 	public Mock findById(Long id) {
 		return mockDAO.findById(id);
+	}
+
+	@Override
+	public Long findByParameters(List<Mock> receivingList, Long id, String outTradeNo, String tradeNo, int startIndex, int resultsNumber) {
+		return mockDAO.findByParameters(receivingList, id, outTradeNo, tradeNo, startIndex, resultsNumber);
 	}
 }

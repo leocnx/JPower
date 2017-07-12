@@ -1,5 +1,7 @@
 package top.auok.cbps.web.converter.service;
 
+import java.util.List;
+
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
@@ -27,5 +29,15 @@ public class JSONMockServiceImpl implements MockService {
 	@Override
 	public Mock findById(Long id) {
 		return jsonAdapterCopyFactory.readapt(delegate.findById(id));
+	}
+
+	@Override
+	public Long findByParameters(List<Mock> receivingList, Long id, String outTradeNo, String tradeNo, int startIndex,
+			int resultsNumber) {
+		Long count = delegate.findByParameters(receivingList, id, outTradeNo, tradeNo, startIndex, resultsNumber);
+		for (int i = 0; i < receivingList.size(); i++) {
+			receivingList.set(i, jsonAdapterCopyFactory.readapt(receivingList.get(i)));
+		}
+		return count;
 	}
 }
