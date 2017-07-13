@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">  
+    $(document).ready(function(){  
+        
+    	//var map = {"outTradeNo":"789", "tradeNo":"456"};
+    	
+        var outTradeNo = 'outTradeNo';
+        var tradeNo = 'tradeNo';
+        var map = {};
+        map[outTradeNo] = "123456";
+        map[tradeNo] = "654321";
+          
+        var postData = JSON.stringify(map);
+        console.log("postData:" + postData);
+        $.ajax({ 
+            type:"POST", 
+            url:"cbps/mock", 
+            dataType:"json",      
+            contentType:"application/json",               
+            data:postData, 
+            success:function(returnData){ 
+                console.log("returnData:" + JSON.stringify(returnData));
+            } 
+         }); 
+    });  
+</script>
+</head>
+
+<body>
+Test Rest.
+</body>
+</html>

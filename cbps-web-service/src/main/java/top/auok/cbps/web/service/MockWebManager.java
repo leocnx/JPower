@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.ws.rs.core.Response;
 
 import top.auok.cbps.model.Mock;
 import top.auok.cbps.service.mock.MockService;
@@ -26,17 +27,24 @@ public class MockWebManager implements MockManagerWebResource {
 	}
 
 	@Override
-	public JSONMock getMock(Long id) {
+	public Response getMock(Long id) {
 		Mock mock = mockService.findById(id);
 		if (mock == null)
 			throw new InvalidMockException.Mock2Exception(id.toString());
-		return (JSONMock) mock;
+
+		return Response.ok(mock).build();
 	}
 
 	@Override
 	public JSONPagedResults<JSONMock> list(Long id, String outTradeNo, String tradeNo, int pageNumber, int pageSize) {
 		List<Mock> receivingList = new ArrayList<>();
-		Long count = mockService.findByParameters(receivingList, id, outTradeNo, tradeNo, pageNumber * pageSize, pageSize);
+		Long count = mockService.findByParameters(receivingList, id, outTradeNo, tradeNo, pageNumber * pageSize,
+				pageSize);
 		return new JSONPagedResults<>(count, pageNumber, pageSize, receivingList);
+	}
+
+	@Override
+	public Response isAlive() {
+		return Response.ok().build();
 	}
 }
