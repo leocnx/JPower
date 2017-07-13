@@ -2,36 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<title>Generate QR-code of URL</title>
+
+<script type='text/javascript'src='js/jquery.min.js'></script>
+<script type="text/javascript"src="js/jquery.qrcode.min.js"></script>
+
 <script type="text/javascript">  
     $(document).ready(function(){  
-        
-    	//var map = {"outTradeNo":"789", "tradeNo":"456"};
-    	
-        var outTradeNo = 'outTradeNo';
-        var tradeNo = 'tradeNo';
-        var map = {};
-        map[outTradeNo] = "123456";
-        map[tradeNo] = "654321";
-          
-        var postData = JSON.stringify(map);
-        console.log("postData:" + postData);
-        $.ajax({ 
-            type:"POST", 
-            url:"cbps/mock", 
-            dataType:"json",      
-            contentType:"application/json",               
-            data:postData, 
-            success:function(returnData){ 
-                console.log("returnData:" + JSON.stringify(returnData));
-            } 
-         }); 
+    	jQuery('#qrcode').qrcode({width: 512,height: 512,text: "http://www.baidu.com"});
     });  
 </script>
 </head>
 
 <body>
-Test Rest.
+<div id="qrcode" align="center"></div>
 </body>
 </html>
