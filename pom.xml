@@ -15,6 +15,7 @@
 		<module>cbps-web-service</module>
 		<module>cbps-web-model</module>
 		<module>cbps-web-converter</module>
+		<module>cbps-schedule</module>
 	</modules>
 
 	<properties>
