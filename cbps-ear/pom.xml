@@ -57,6 +57,10 @@
 							<artifactId>cbps-schedule</artifactId>
 							<includeInApplicationXml>true</includeInApplicationXml>
 						</jarModule>
+						<ejbModule>
+							<groupId>top.auok</groupId>
+							<artifactId>cbps-notify</artifactId>
+						</ejbModule>
 					</modules>
 				</configuration>
 			</plugin>
@@ -112,6 +116,12 @@
 			<groupId>top.auok</groupId>
 			<artifactId>cbps-schedule</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>top.auok</groupId>
+			<artifactId>cbps-notify</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
 		</dependency>
 	</dependencies>
 </project>

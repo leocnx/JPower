@@ -16,6 +16,7 @@
 		<module>cbps-web-model</module>
 		<module>cbps-web-converter</module>
 		<module>cbps-schedule</module>
+		<module>cbps-notify</module>
 	</modules>
 
 	<properties>
