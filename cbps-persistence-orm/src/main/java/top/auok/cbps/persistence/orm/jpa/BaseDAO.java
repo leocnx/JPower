@@ -120,7 +120,8 @@ public class BaseDAO<T, ET extends T, K> implements DataAccessObject<T, K> {
 		allJoinCountSuppliers.forEach((key, value) -> allJoinCount.put(key, value.get()));
 
 		query.select(root);
-		countQuery.select(criteriabuilder.count(rootCount));
+		// countQuery.select(criteriabuilder.count(rootCount));
+		countQuery.select(criteriabuilder.countDistinct(rootCount));
 
 		if (expressionProvider != null) {
 			query.where(expressionProvider.apply(criteriabuilder, allJoins));
